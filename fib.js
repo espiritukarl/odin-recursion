@@ -8,7 +8,7 @@ function fib(num) {
     return result
 }
 
-console.log(fib(8))
+console.log(fib(8)) // [0, 1, 1, 2, 3, 5, 8, 13]
 
 function fibsRec(num, arr = [0, 1]) {
     if (arr.length >= num) return arr
@@ -16,4 +16,5 @@ function fibsRec(num, arr = [0, 1]) {
     return fibsRec(num, arr)
 }
 
-console.log(fibsRec(10))
+console.log(fibsRec(8)) // [0, 1, 1, 2, 3, 5, 8, 13]
+console.log(fibsRec(10)) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
